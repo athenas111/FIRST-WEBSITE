@@ -1,0 +1,35 @@
+import './HeroPage.css';
+
+const MyComponent = () => {
+  const cards = [
+    {
+      title: "PARK JIMIN",
+      imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/253e0838d19881fd22e1afe1ec51a8c9094b3acd6a12841709b5132435256f2c?apiKey=153242aed83d4e6d9de9ff28494dbbff&"
+    }
+  ];
+
+  return (
+    <div className="hero-content">
+      <p className="primary-text">all from bts rising star</p>
+      <div className="card-container">
+        {cards.map((card, index) => (
+          <Card key={index} title={card.title} imageUrl={card.imageUrl} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const Card = ({ title }) => (
+  <div className="card">
+    <h2 className="card-title">{title}</h2>
+   </div>
+);
+
+const HeroPage = () => (
+  <div className="content-container">
+    <MyComponent />
+  </div>
+);
+
+export default HeroPage;
