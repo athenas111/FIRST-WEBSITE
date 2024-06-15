@@ -1,0 +1,57 @@
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 350px;
+     margin-top: auto;
+     margin-bottom: auto;
+     height: 100vh;
+     left: 100px;
+}
+
+.MainTitle {
+position: relative;
+}
+.content-container {
+    margin-top: 54px;
+  }
+  .primary-text {
+    color: #000;
+    font: 400 35px Jost, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .content-container {
+      margin-top: 40px;
+    }
+  }
+  .content-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .primary-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card {
+    background-color: #f8bef3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 5px 0  0px;
+    margin: 10px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+   
+  
