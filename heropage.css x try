@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2560px;
+    min-height: calc(100vh - 50px);
+    background-color: #f0f0f0;
+    padding-top: 80px;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    border: 0;
+}
+
+.slider-container {
+    background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/39eb1364015a0e75fc10bae9e06e0049f7340c4200a73ae5edc83623d8c73520?placeholderIfAbsent=true');
+    width: 100%;
+    height: 500px;
+    z-index: 4;
+    padding-top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.slider {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sliders {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 200px;
+    display: flex;
+}
+
+.sliders input {
+    display: none;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ position: relative;
+ 
+}
+
+.slide img {
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: 0;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+}
+
+.manual-btn {
+    border: 2px solid rgb(255, 192, 234);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .sliders {
+    transform: translateX(0%);
+    
+}
+
+#radio2:checked ~ .sliders {
+    transform: translateX(-100%);
+}
+
+#radio3:checked ~ .sliders {
+    transform: translateX(-200%);
+}
+
+#radio1 {
+    display:none;
+}
+#radio2 {
+    display:none;
+}
+#radio3 {
+    display:none;
+}
